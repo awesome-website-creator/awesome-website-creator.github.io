@@ -3,14 +3,12 @@
     <title>Awesome Website Creator</title>
   </head>
   <body>
+    <p id="p"></p>
     <script>
+      var p = document.getElementById("p");
       var x = location.hash;
       x = x.replace('#', '');
-      document.write(x);
-      
-      if (x == "") {
-        window.location.reload();
-      }
+      p.innerHTML(x);
     </script>
   </body>
 </html>
