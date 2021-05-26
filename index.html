@@ -7,6 +7,10 @@
       var x = location.hash;
       x = x.replace('#', '');
       document.write(x);
+      
+      if (x == "") {
+        window.location.reload();
+      }
     </script>
   </body>
 </html>
